@@ -8,10 +8,10 @@ version '1.0-SNAPSHOT'
 
 allure {
     autoconfigure = true
-    version = '2.13.5'  // Latest Allure Version
+    version = '2.13.5'
 
     useJUnit5 {
-        version = '2.13.5' // Latest Allure Version
+        version = '2.13.5'
     }
 }
 
