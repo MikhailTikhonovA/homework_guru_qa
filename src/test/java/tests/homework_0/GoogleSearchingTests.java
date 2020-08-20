@@ -46,16 +46,6 @@ public class GoogleSearchingTests {
         $(".g").shouldHave(text("yandex.ru"));
     }
     
-    @Test
-    public void searchYandex() {
-        // Открыть Yandex
-        open("https://yandex.com");
 
-        // Ввести Gradle в поиск
-        $(byId("text")).setValue("gradle").pressEnter();
-
-        // Проверить, что Gradle появился в результатах поиска
-        $("html").shouldHave(text("Gradle"));
-    }
 
 }

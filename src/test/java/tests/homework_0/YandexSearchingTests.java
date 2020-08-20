@@ -21,4 +21,16 @@ public class YandexSearchingTests {
         // Проверить наличие qa.guru в результатах поиска
         $(".serp-item").shouldHave(text("qa.guru"));
     }
+
+    @Test
+    public void searchYandex() {
+        // Открыть Yandex
+        open("https://yandex.com");
+
+        // Ввести Gradle в поиск
+        $(byName("text")).setValue("gradle").pressEnter();
+
+        // Проверить, что Gradle появился в результатах поиска
+        $(".serp-item").shouldHave(text("Gradle"));
+    }
 }
